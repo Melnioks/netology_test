@@ -7,3 +7,6 @@
 2. Запустить тесты командой ./gradlew test
 
 В issue прикреплен архив с результатми тестов
+
+[![Build status](https://ci.appveyor.com/api/projects/status/yqe93slfjt3oe84m?svg=true)](https://ci.appveyor.com/project/Melnioks/netology-test)
+
