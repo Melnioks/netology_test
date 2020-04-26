@@ -1,2 +1,9 @@
-# netology_test
-Tests for Netology school
+# Тестовое задание для проекта Нетология
+Реализованы тесты для подсчета необходимой суммы для получения Cashback сервиса
+
+Для запуска тестов:
+
+1. git clone https://github.com/Melnioks/netology_test
+2. Запустить тесты командой ./gradlew test
+
+В issue прикреплен архив с результатми тестов
