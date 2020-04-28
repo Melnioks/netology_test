@@ -18,7 +18,7 @@ public class CashbackHackServiceTest {
     @DisplayName("Amount in the cart is more than 0")
     void shouldReturnAmountToNext1000(int amount, int expected) {
         int actual = cashbackHackService.remain(amount);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @ParameterizedTest
