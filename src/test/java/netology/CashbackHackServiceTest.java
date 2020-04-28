@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class CashbackHackServiceTest {
+class CashbackHackServiceTest {
 
     private CashbackHackService cashbackHackService = new CashbackHackService();
 
@@ -20,6 +20,7 @@ public class CashbackHackServiceTest {
         int actual = cashbackHackService.remain(amount);
         assertEquals(expected, actual);
     }
+
 
     @ParameterizedTest
     @CsvFileSource(resources = "/cashbackTestDataException.csv", numLinesToSkip = 1)
