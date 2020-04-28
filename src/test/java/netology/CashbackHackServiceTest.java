@@ -1,21 +1,17 @@
 package netology;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-class CashbackHackServiceTest {
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+public class CashbackHackServiceTest {
 
-    private CashbackHackService cashbackHackService;
-
-    @BeforeEach
-    void setUp() {
-        cashbackHackService = new CashbackHackService();
-    }
+    private CashbackHackService cashbackHackService = new CashbackHackService();
 
     @ParameterizedTest
     @CsvFileSource(resources = "/cashbackTestDataPositive.csv", numLinesToSkip = 1)
