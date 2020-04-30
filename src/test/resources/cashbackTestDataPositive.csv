@@ -1,5 +1,5 @@
-Amount,Expected
-900,100
-999,1
-1001,999
-1000,0
+Amount,Expected,Failure Message
+900,100,The remaining amount is not calculated correctly for 900
+999,1,The remaining amount is not calculated correctly for 999
+1001,999,The remaining amount is not calculated correctly for 1001
+1000,0,The remaining amount is not calculated correctly for 1000
